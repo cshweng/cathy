@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "C/C++: g++ 建置及偵錯使用中的檔案",
             "type": "cppdbg",
