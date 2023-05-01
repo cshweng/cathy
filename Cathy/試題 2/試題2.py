@@ -25,6 +25,6 @@ if __name__ == "__main__":
     json_object = dumps(loads(trasformation.to_json(orient='records')),ensure_ascii=False, indent=4)
  
     # Writing to sample.json
-    with open("CSV2JSON.json", "w") as outfile:
+    with open("試題2_CSV2JSON.json", "w") as outfile:
         outfile.write(json_object)
     print("Transformation to 'CSV2JSON.json' Success")
