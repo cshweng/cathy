@@ -48,7 +48,7 @@ img_data = requests.get(CAP_image).content
 with open('CAP_image.jpeg', 'wb') as handler:
     handler.write(img_data)
 
-# OCR Recognition
+# CAPTCHA image Recognition
 ocr = ddddocr.DdddOcr()
 with open('CAP_image.jpeg', 'rb') as f:
     image_bytes = f.read()
@@ -64,7 +64,7 @@ payloadData = {
     "village": "",
     "neighbor": "",
     "sDate": "111-01-01",
-    "eDate": "112-06-01",
+    "eDate": str(datetime.date.today(),
     "_includeNoDate": "on",
     "registerKind": 0,
     "captchaInput": res,
@@ -83,7 +83,6 @@ payloadData = {
     "sord": "asc"
      }
 result = session.post(url=url_2, headers=headers,cookies=cookies ,data=payloadData)
-# session.config['keep_alive'] = False
 soup = BeautifulSoup(result.text, 'html.parser')
 
 # Data Clearing

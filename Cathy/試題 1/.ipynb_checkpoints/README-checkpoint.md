@@ -10,6 +10,7 @@ Require Python Package:
 4. pandas
 5. re
 6. ddddocr
+7. datetime
 
 Brief Description:
 1. Run 試題1.py or 試題1.ipynb to crawler
