@@ -13,6 +13,6 @@ Require Python Package:
 
 Brief Description:
 1. Run 試題1.py or 試題1.ipynb to crawler
-2. Result will save as "題目一crawler.csv" 
+2. Result will save as "試題1_CRAWLER.csv" 
 
 Note that ddddocr package can recognize most of the CAPTCHA image, but still have chance wrong recogniztion. Re-run the scripts may fix this problem.
