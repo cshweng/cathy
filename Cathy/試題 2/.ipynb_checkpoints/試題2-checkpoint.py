@@ -3,6 +3,7 @@ from json import loads, dumps
 import sys
 
 def CSV2JSON_function(df):
+    """ this function is to transform pandas DataFrame to nested JSON """
     trasformation = (df
      .groupby(['member_id','tag_name'],group_keys=True)
      .apply(lambda x: x[['detail_name','detail_value']].to_dict('records'))
@@ -19,11 +20,12 @@ def CSV2JSON_function(df):
 
 if __name__ == "__main__":
     """ main function to transform CSV to JSON"""
-    df = pd.read_csv(str(sys.argv[1]))
-    trasformation = CSV2JSON_function(df)
+    # import package with argument csv file name
+    df = pd.read_csv(str(sys.argv[1]))  
+    # CSV to JSON trasnformation
+    trasformation = CSV2JSON_function(df)  
     # Serializing json
-    json_object = dumps(loads(trasformation.to_json(orient='records')),ensure_ascii=False, indent=4)
- 
+    json_object = dumps(loads(trasformation.to_json(orient='records')),ensure_ascii=False, indent=4)  
     # Writing to sample.json
     with open("試題2_CSV2JSON.json", "w") as outfile:
         outfile.write(json_object)

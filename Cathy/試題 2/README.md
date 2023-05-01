@@ -9,6 +9,8 @@ Require Python Package:
 
 
 Brief Description:
-1. Run 試題2.py or 試題2.ipynb to trasform CSV to JSON
-2. Result will save as "試題2_CSV2JSON.csv" 
+1. Put the csv file in the same directory with scripts 試題2.py
+2. Run 試題2.py in the shell with argument of file path, 
+    e.g., python3 試題2.py CSV2JSON.csv
+3. Result will save as "試題2_CSV2JSON.csv" 
 
