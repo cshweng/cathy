@@ -15,4 +15,4 @@ Brief Description:
 1. Run 題目一.py or 題目一.ipynb to crawler
 2. Result will save as "題目一crawler.csv" 
 
-notes ddddocr package can recognize CAPTCHA image, but still have chance wrong recogniztion. You re-run the code mAy, fix this problem.
+Note that ddddocr package can recognize most of the CAPTCHA image, but still have chance wrong recogniztion. Re-run the scripts may fix this problem.
