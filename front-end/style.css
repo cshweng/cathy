@@ -1,0 +1,14 @@
+#counter{
+    display:block;
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+}
+
+#dices{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    white-space: nowrap;
+}
